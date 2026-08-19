@@ -1,0 +1,72 @@
+[
+  {
+    "day": 1,
+    "levelChallenge": 14,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "day": 2,
+    "levelChallenge": 31,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "day": 3,
+    "levelChallenge": 58,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "day": 4,
+    "levelChallenge": 80,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "day": 5,
+    "levelChallenge": 103,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "day": 6,
+    "levelChallenge": 114,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "day": 7,
+    "levelChallenge": 160,
+    "rewards": [
+      {
+        "itemId": 0,
+        "amount": 250
+      }
+    ]
+  }
+]

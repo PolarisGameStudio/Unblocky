@@ -1,0 +1,67 @@
+[
+	{
+		"winStreak": 1,
+		"rewards": [
+			{
+				"itemId": 96,
+				"amount": 1
+			},	
+			{
+				"itemId": 95,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"winStreak": 2,
+		"rewards": [
+			{
+				"itemId": 96,
+				"amount": 2
+			},	
+			{
+				"itemId": 95,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"winStreak": 3,
+		"rewards": [
+			{
+				"itemId": 96,
+				"amount": 3
+			},	
+			{
+				"itemId": 95,
+				"amount": 3
+			}
+		]
+	},
+	{
+		"winStreak": 4,
+		"rewards": [
+			{
+				"itemId": 96,
+				"amount": 4
+			},
+			{
+				"itemId": 95,
+				"amount": 4
+			}
+		]
+	},
+	{
+		"winStreak": 5,
+		"rewards": [
+			{
+				"itemId": 96,
+				"amount": 5
+			},
+			{
+				"itemId": 95,
+				"amount": 5
+			},
+		]
+	}
+]

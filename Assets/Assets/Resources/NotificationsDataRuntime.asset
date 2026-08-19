@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc367cbd80330f510472cf8487c9988, type: 3}
+  m_Name: NotificationsDataRuntime
+  m_EditorClassIdentifier:
+  useForIos: 1
+  useForAndroid: 1
+  iconIdentifierSmall: icon_0
+  iconIdentifierLarge: icon_1
+  notificationType: 1
+  lstBigPictures:
+  - notify_big_picture1.png
+  lstNotiTitle:
+  - notiTitleContent: Sad Blocks Need Help!
+    notiEmojiTitle: 5
+  - notiTitleContent: Freedom!
+    notiEmojiTitle: 3
+  - notiTitleContent: Right Gate, Right Fate
+    notiEmojiTitle: 23
+  lstNotiDescription:
+  - notiTitleContent: Help them find the right gate before they start crying (probably)
+    notiEmojiTitle: 5
+  - notiTitleContent: Blocks love escaping! Match colors and set them free
+    notiEmojiTitle: 3
+  - notiTitleContent: Pick the right gate, or blocks might hold a grudge
+    notiEmojiTitle: 23
+  lstNotiSummary:
+  - notiTitleContent: Guide the sad blocks home before they get too emotional
+    notiEmojiTitle: 5
+  - notiTitleContent: Guide blocks home, hear their happy howls
+    notiEmojiTitle: 5
+  - notiTitleContent: Match colors or face their silent judgment
+    notiEmojiTitle: 23
+  hourNotiStart: 20
+  minuteNotiStart: 15
+  secondNotiStart: 0
+  hourDelayInterval: 24

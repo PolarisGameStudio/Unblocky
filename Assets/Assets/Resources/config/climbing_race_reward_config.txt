@@ -1,0 +1,51 @@
+[
+	{
+		"rewards": [
+			{
+				"itemId": 0,
+				"amount":250,
+			},
+			{
+				"itemId": 1,
+				"amount":1,
+			},	
+			{
+				"itemId": 3,
+				"amount":1,
+			},	
+			{
+				"itemId": 2,
+				"amount":1,
+			},
+		]
+	},	
+	{
+		"rewards": [
+			{
+				"itemId": 1,
+				"amount":1,
+			},	
+			{
+				"itemId": 3,
+				"amount":1,
+			},	
+			{
+				"itemId": 2,
+				"amount":1,
+			},
+		]
+	},	
+	{
+		"rewards": [
+			{
+				"itemId": 1,
+				"amount":1,
+			},	
+			{
+				"itemId": 2,
+				"amount":1,
+			},
+		]
+	},
+	
+]

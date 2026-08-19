@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9b4a7af993f03dbf47640c4de8516f1, type: 3}
+  m_Name: D2MServiceSettings
+  m_EditorClassIdentifier:
+  Firebase: 1
+  FirebaseAnalytics: 1
+  FirebaseCrashlytics: 1
+  FirebaseRemoteConfig: 1
+  FirebaseMessaging: 1
+  FirebaseAuth: 0
+  FirebaseStorage: 0
+  FirebaseFirestoreDB: 0
+  FirebaseRealTimeDB: 0
+  D2MLogEventTest: 0
+  D2MLogEventPrefix: d2mlogevent
+  AnalyticLogEventPrefix:
+  RemoteConfigPrefix:
+  number_level_show_interstitialads: 2
+  cooldown_between_show_interstitial: 30
+  cooldown_between_show_rewardedvideo: 1
+  number_level_show_rating: 2
+  show_interstitial_if_fail: 0
+  show_fps: 0
+  GameAnalytics: 0
+  gameAnalyticsIosGameKey:
+  gameAnalyticsIosSecretKey:
+  gameAnalyticsAndroidGameKey:
+  gameAnalyticsAndroidSecretKey:
+  Facebook: 1
+  facebookAppId: 574720512279036
+  facebookClientId: 886245772017a8e5c4d6adbaa2a0bc01
+  Adjust: 0
+  adjustToken:
+  adjustIAPRevenueToken:
+  adjustTestEventToken:
+  AppsFlyer: 1
+  appsFlyerToken: UAVHtuYSgwSPXxXQVDGA65
+  appsFlyeriOSAppId: 6744522888
+  appsFlyerIsDebug: 0
+  appsFlyerGetConversionData: 0
+  appsFlyyerAdRevenue: 1
+  appsFlyyerPurchaseConnector: 1
+  AOANetwork: 3
+  adMobAOAAndroid: 0
+  adMobAOAAndroidTest: 0
+  adMobAOAAndroidShowOpeningApp: 0
+  adMobAOAAndroidAppKey: ca-app-pub-3926209354441959~6332596096
+  adMobAOAAndroidAdUnit1: ca-app-pub-3926209354441959/4748051688
+  adMobAOAAndroidAdUnit2: ca-app-pub-3926209354441959/4748051688
+  adMobAOAAndroidAdUnit3: ca-app-pub-3926209354441959/4748051688
+  adMobAOAIOS: 0
+  adMobAOAIOSTest: 0
+  adMobAOAIOSShowOpeningApp: 0
+  adMobAOAIOSAppKey: ca-app-pub-3926209354441959~5327216747
+  adMobAOAIOSAdUnit1: ca-app-pub-3926209354441959/8852378847
+  adMobAOAIOSAdUnit2: ca-app-pub-3926209354441959/8852378847
+  adMobAOAIOSAdUnit3: ca-app-pub-3926209354441959/8852378847
+  MaxApplovinAOA: 1
+  maxSDKKeyAOA: M4GLwqezVT2WDo75OWFGOV873pVg6-3S3Kpz8Rxe_-9CnHI9oXPB2TI5LpnRnqvr8hpH8kw7i4KTMcc891KCad
+  maxApplovinAOAAndroidAdUnit: 4e529ffc1b525feb
+  maxApplovinAOAIOSAdUnit: e11a64d7b0275790
+  AdMob: 0
+  adMobTest: 1
+  adMobAndroidAppKey: ca-app-pub-3046520253844875~5219745850
+  adMobBannerAndroidAdUnit:
+  adMobInterstitialAndroidAdUnit:
+  adMobRewardedVideoAndroidAdUnit:
+  adMobRewardedInterstitialAndroidAdUnit:
+  adMobNativeAndroidAdUnit:
+  adMobIOSAppKey: ca-app-pub-3926209354441959~2367215176
+  adMobBannerIOSAdUnit:
+  adMobInterstitialIOSAdUnit:
+  adMobRewardedVideoIOSAdUnit:
+  adMobRewardedInterstitialIOSAdUnit:
+  adMobNativeIOSAdUnit:
+  MaxApplovin: 1
+  maxSDKKey: M4GLwqezVT2WDo75OWFGOV873pVg6-3S3Kpz8Rxe_-9CnHI9oXPB2TI5LpnRnqvr8hpH8kw7i4KTMcc891KCad
+  maxSDKAdmobAndroidAppId: ca-app-pub-3046520253844875~8180048391
+  maxSDKAdmobIOSAppId: ca-app-pub-3046520253844875~4941608553
+  maxSDKBannerAndroidAdUnit: 959d9bb4823070fd
+  maxSDKInterstitialAndroidAdUnit: 6ea74e9b3a2a1083
+  maxSDKRewardedVideoAndroidAdUnit: 014113e0b9b5b89f
+  maxSDKBannerIOSAdUnit: feee33167e296a13
+  maxSDKInterstitialIOSAdUnit: 35406045db65d8f2
+  maxSDKRewardedVideoIOSAdUnit: 44ac6f536a9338d2
+  IronSource: 0
+  ironSourceAndroidAppKey: 1e009abed
+  ironSourceIOSAppKey: 1e1bd337d
+  ironSourceAdmobAndroidAppId: ca-app-pub-3926209354441959~6332596096
+  ironSourceAdmobIOSAppId: ca-app-pub-3926209354441959~5327216747
+  ironSourceAdQuality: 1
+  FalconSDK: 1

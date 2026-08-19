@@ -1,0 +1,76 @@
+
+banner.png
+size: 786,519
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+moi/Layer 44
+  rotate: false
+  xy: 2, 25
+  size: 226, 207
+  orig: 226, 207
+  offset: 0, 0
+  index: -1
+moi/airplane  body 22
+  rotate: false
+  xy: 230, 53
+  size: 219, 179
+  orig: 219, 179
+  offset: 0, 0
+  index: -1
+moi/airplane body
+  rotate: false
+  xy: 2, 234
+  size: 457, 283
+  orig: 457, 283
+  offset: 0, 0
+  index: -1
+moi/canh may bay
+  rotate: false
+  xy: 461, 190
+  size: 319, 327
+  orig: 320, 328
+  offset: 1, 1
+  index: -1
+moi/canh may bay hong
+  rotate: true
+  xy: 451, 34
+  size: 154, 160
+  orig: 159, 163
+  offset: 0, 2
+  index: -1
+moi/mat 1
+  rotate: false
+  xy: 613, 25
+  size: 98, 77
+  orig: 102, 83
+  offset: 1, 4
+  index: -1
+moi/mat 2
+  rotate: false
+  xy: 613, 104
+  size: 105, 84
+  orig: 111, 90
+  offset: 1, 5
+  index: -1
+moi/mieng
+  rotate: false
+  xy: 720, 87
+  size: 52, 48
+  orig: 52, 48
+  offset: 0, 0
+  index: -1
+moi/moi hong
+  rotate: false
+  xy: 2, 2
+  size: 24, 21
+  orig: 24, 22
+  offset: 0, 1
+  index: -1
+moi/tay
+  rotate: false
+  xy: 720, 137
+  size: 64, 51
+  orig: 64, 51
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,81 @@
+[
+	{
+		"day": 1,
+		"rewards": [
+			{
+				"itemId": 0,
+				"amount": 100,
+			}
+		]
+	},
+	{
+		"day": 2,
+		"rewards": [
+			{
+				"itemId": 2,
+				"amount": 1,
+			}
+		]
+	},
+	{
+		"day": 3,
+		"rewards": [
+			{
+				"itemId": 0,
+				"amount": 125,
+			}
+		]
+	},
+	{
+		"day": 4,
+		"rewards": [
+			{
+				"itemId": 3,
+				"amount": 1,
+			}
+		]
+	},
+	{
+		"day": 5,
+		"rewards": [
+			{
+				"itemId": 0,
+				"amount": 150,
+			}
+		]
+	},
+	{
+		"day": 6,
+		"rewards": [
+			{
+				"itemId": 4,
+				"amount": 1,
+			}
+		]
+	},
+	{
+		"day": 7,
+		"rewards": [
+			{
+				"itemId": 0,
+				"amount": 300,
+			},
+			{
+				"itemId": 2,
+				"amount": 1,
+			},
+			{
+				"itemId": 3,
+				"amount": 1,
+			},
+			{
+				"itemId": 4,
+				"amount": 1,
+			},
+			{
+				"itemId": 5,
+				"amount": 900,
+			}
+		]
+	}
+]

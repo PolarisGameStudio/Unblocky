@@ -1,0 +1,22 @@
+[
+ {
+   "skinId": 0,
+   "winStreakReq": 100,
+   "skinName": "Joy Block"
+ },
+ {
+   "skinId": 1,
+   "winStreakReq": 100,
+   "skinName": "Build Brick"
+ },
+ {
+   "skinId": 2,
+   "winStreakReq": 200,
+   "skinName": "Choco Brick"
+ },
+ {
+   "skinId": 3,
+   "winStreakReq": 300,
+   "skinName": "Wood Block"
+ }
+]

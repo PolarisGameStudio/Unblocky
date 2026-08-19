@@ -1,0 +1,77 @@
+[
+	{
+		"data_type": "iap_coin_pack_config",
+		"version": "1.0.0",
+		"file_name": "iap_coin_pack_config"
+	},
+	{
+		"data_type": "iap_pack_collection_config",
+		"version": "1.0.0",
+		"file_name": "iap_pack_collection_config"
+	},
+	{
+		"data_type": "iap_skip_ticket_pack_config",
+		"version": "1.0.0",
+		"file_name": "iap_skip_ticket_pack_config"
+	},
+	{
+		"data_type": "level_data",
+		"version": "1.0.0",
+		"file_name": "level_data"
+	},
+	{
+		"data_type": "revive_price",
+		"version": "1.0.0",
+		"file_name": "revive_price"
+	},
+	{
+		"data_type": "skin_config",
+		"version": "1.0.0",
+		"file_name": "skin_config"
+	},
+	{
+		"data_type": "winstreak_reward_config",
+		"version": "1.0.0",
+		"file_name": "winstreak_reward_config"
+	},
+	{
+		"data_type": "season_pass_config",
+		"version": "1.0.0",
+		"file_name": "season_pass_config"
+	},
+	{
+		"data_type": "winstreak_sp_bonus_coin_config",
+		"version": "1.0.0",
+		"file_name": "winstreak_sp_bonus_coin_config"
+	},
+	{
+		"data_type": "shop_free_coin_ads_config",
+		"version": "1.0.0",
+		"file_name": "shop_free_coin_ads_config"
+	},
+	{
+		"data_type": "island_config",
+		"version": "1.0.0",
+		"file_name": "island_config"
+	},
+	{
+		"data_type": "avatar_block_ads_config",
+		"version": "1.0.0",
+		"file_name": "avatar_block_ads_config"
+	},
+	{
+		"data_type": "bot_climbing_race_config",
+		"version": "1.0.0",
+		"file_name": "bot_climbing_race_config"
+	},
+	{
+		"data_type": "climbing_race_reward_config",
+		"version": "1.0.0",
+		"file_name": "climbing_race_reward_config"
+	},
+	{
+		"data_type": "achivement_config",
+		"version": "1.0.0",
+		"file_name": "achivement_config"
+	}
+]

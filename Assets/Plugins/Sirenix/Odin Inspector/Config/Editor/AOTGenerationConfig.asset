@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1726182683, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
+  m_Name: AOTGenerationConfig
+  m_EditorClassIdentifier: 
+  automateBeforeBuilds: 1
+  deleteDllAfterBuilds: 1
+  AutomateForAllAOTPlatforms: 1
+  automateForPlatforms: 0900000014000000
+  lastScan: 638989975923246191
+  supportSerializedTypes:
+  - TypeName: AccessoryType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Action, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Action`1[[UnityEngine.Animator, UnityEngine.AnimationModule]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: BMH.Ads.AdsType, com.bmh.ads.runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.AmbientMode, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Animator, UnityEngine.AnimationModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.AudioClip, UnityEngine.AudioModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Boolean, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Color, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[AccessoryType, Assembly-CSharp],[System.Collections.Generic.List`1[[ShopUnitData,
+      Assembly-CSharp]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[AccessoryType, Assembly-CSharp],[ShopData+FolderPath,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[AccessoryType, Assembly-CSharp],[ShopUnit,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[AccessoryType, Assembly-CSharp],[UnitView,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[BMH.Ads.AdsType, com.bmh.ads.runtime],[System.String,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[GameType, Assembly-CSharp],[HomeInfo,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[GameType, Assembly-CSharp],[LightingData,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[GameType, Assembly-CSharp],[obbyParkour.PlayerConfig,
+      Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[MonsterType, Assembly-CSharp],[UnityEngine.Sprite,
+      UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[MusicType, Assembly-CSharp],[UnityEngine.AudioClip,
+      UnityEngine.AudioModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[SoundName, Assembly-CSharp],[UnityEngine.AudioClip,
+      UnityEngine.AudioModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UnityEngine.Sprite,
+      UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.Dictionary`2[[UnityEngine.SystemLanguage,
+      UnityEngine.CoreModule],[UnityEngine.Sprite, UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[AccessoryType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[BMH.Ads.AdsType,
+      com.bmh.ads.runtime]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[GameType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[MonsterType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[MusicType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[SoundName, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.EnumEqualityComparer`1[[UnityEngine.SystemLanguage,
+      UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Single, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.GameObject, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.GameObject[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: GameType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+      mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: HomeInfo, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: HomeItem, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[AccessoryType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[BMH.Ads.AdsType, com.bmh.ads.runtime]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[GameType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[MonsterType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[MusicType, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[SoundName, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[System.String, mscorlib]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.IEqualityComparer`1[[UnityEngine.SystemLanguage,
+      UnityEngine.CoreModule]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Int32, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: LightingData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.LightingSettings, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[System.Collections.Generic.List`1[[UnityEngine.Transform,
+      UnityEngine.CoreModule]], mscorlib]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ShopItem, Assembly-CSharp]], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[ShopUnitData, Assembly-CSharp]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Collections.Generic.List`1[[UnityEngine.Transform, UnityEngine.CoreModule]],
+      mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Material, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Material[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MaterialUnit, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MaterialUnit[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MonsterType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: MusicType, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Object, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Object[], mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: obbyParkour.PlayerConfig, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.UI.ScrollRect, UnityEngine.UI
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.SerializedDictionary`2[[AccessoryType, Assembly-CSharp],[System.Collections.Generic.List`1[[ShopUnitData,
+      Assembly-CSharp]], mscorlib]], Unity.RenderPipelines.Core.Runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.SerializedDictionary`2[[AccessoryType, Assembly-CSharp],[ShopData+FolderPath,
+      Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.SerializedDictionary`2[[AccessoryType, Assembly-CSharp],[ShopUnit,
+      Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.SerializedDictionary`2[[AccessoryType, Assembly-CSharp],[UnitView,
+      Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Rendering.SerializedDictionary`2[[GameType, Assembly-CSharp],[HomeInfo,
+      Assembly-CSharp]], Unity.RenderPipelines.Core.Runtime
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ShopData+FolderPath, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ShopItem, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ShopUnit, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: ShopUnitData, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.SkinnedMeshRenderer, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.SkinnedMeshRenderer[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: SoundName, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Sprite, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.String, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.SystemLanguage, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Texture, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Texture[], UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Transform, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnitView, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1

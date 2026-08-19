@@ -1,0 +1,538 @@
+[
+	{
+		"id": 1,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 900
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			},
+			{
+				"itemId": 4,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 2,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 0,
+				"amount": 500
+			}
+		]
+	},
+	{
+		"id": 3,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 2,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 4,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 5,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 900
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			}
+		]
+	},
+	{
+		"id": 6,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 200
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 2,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 7,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 101,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 8,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 3,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 9,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 250
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 101,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 10,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 900
+			},
+			{
+				"itemId": 2,
+				"amount": 1
+			},
+			{
+				"itemId": 101,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			},
+			{
+				"itemId": 0,
+				"amount": 250
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 11,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 2,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 0,
+				"amount": 500
+			}
+		]
+	},
+	{
+		"id": 12,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 13,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 300
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 3,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 14,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 101,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 2,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 15,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 4,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 16,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 101,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 17,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 2,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 3600
+			}
+		]
+	},
+	{
+		"id": 18,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 250
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 19,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 20,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			},
+			{
+				"itemId": 2,
+				"amount": 1
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 3600
+			},
+			{
+				"itemId": 0,
+				"amount": 750
+			},
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 21,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 101,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 100,
+				"amount": 3
+			}
+		]
+	},
+	{
+		"id": 22,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 101,
+				"amount": 3
+			}
+		]
+	},
+	{
+		"id": 23,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 3,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 24,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 2,
+				"amount": 3
+			}
+		]
+	},
+	{
+		"id": 25,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 300
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 3600
+			}
+		]
+	},
+	{
+		"id": 26,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 4,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 4,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 27,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 101,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 3600
+			}
+		]
+	},
+	{
+		"id": 28,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 100,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 100,
+				"amount": 3
+			}
+		]
+	},
+	{
+		"id": 29,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 2,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 101,
+				"amount": 3
+			}
+		]
+	},
+	{
+		"id": 30,
+		"score": 20,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 1800
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			},
+			{
+				"itemId": 4,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 5,
+				"amount": 3600
+			},
+			{
+				"itemId": 0,
+				"amount": 1500
+			},
+			{
+				"itemId": 4,
+				"amount": 3
+			}
+		]
+	}
+]

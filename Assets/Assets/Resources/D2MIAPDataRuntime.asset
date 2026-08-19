@@ -1,0 +1,319 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef6c5648380460c1403d0e1a7b5b919, type: 3}
+  m_Name: D2MIAPDataRuntime
+  m_EditorClassIdentifier:
+  isDebug: 0
+  useReceiptValidation: 1
+  useForGooglePlay: 1
+  useForIos: 1
+  shopProducts:
+  - productName: NoAds
+    productType: 1
+    idGooglePlay: iap.color.block.slide.noads
+    idIOS: iap.color.block.slide.noads
+    value: 0
+    localizedPriceString: '-'
+    price: 7.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: NoAdsBundle
+    productType: 1
+    idGooglePlay: iap.color.block.slide.noadsbundle
+    idIOS: iap.color.block.slide.noadsbundle
+    value: 0
+    localizedPriceString: '-'
+    price: 11.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: SmallBundle
+    productType: 0
+    idGooglePlay: iap.color.block.slide.smallbundle
+    idIOS: iap.color.block.slide.smallbundle
+    value: 0
+    localizedPriceString: '-'
+    price: 9.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: CoinPack1
+    productType: 0
+    idGooglePlay: iap.color.block.slide.coinpack1
+    idIOS: iap.color.block.slide.coinpack1
+    value: 0
+    localizedPriceString: '-'
+    price: 1.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: CoinPack2
+    productType: 0
+    idGooglePlay: iap.color.block.slide.coinpack2
+    idIOS: iap.color.block.slide.coinpack2
+    value: 0
+    localizedPriceString: '-'
+    price: 7.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: CoinPack3
+    productType: 0
+    idGooglePlay: iap.color.block.slide.coinpack3
+    idIOS: iap.color.block.slide.coinpack3
+    value: 0
+    localizedPriceString: '-'
+    price: 14.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: SkipTicket_Pk1
+    productType: 0
+    idGooglePlay: iap.color.block.slide.skipticket_pk1
+    idIOS: iap.color.block.slide.skipticket_pk1
+    value: 0
+    localizedPriceString: '-'
+    price: 3.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: SkipTicket_Pk2
+    productType: 0
+    idGooglePlay: iap.color.block.slide.skipticket_pk2
+    idIOS: iap.color.block.slide.skipticket_pk2
+    value: 0
+    localizedPriceString: '-'
+    price: 6.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: SkipTicket_Pk3
+    productType: 0
+    idGooglePlay: iap.color.block.slide.skipticket_pk3
+    idIOS: iap.color.block.slide.skipticket_pk3
+    value: 0
+    localizedPriceString: '-'
+    price: 16.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: MediumBundle
+    productType: 0
+    idGooglePlay: iap.color.block.slide.mediumbundle
+    idIOS: iap.color.block.slide.mediumbundle
+    value: 0
+    localizedPriceString: '-'
+    price: 18.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: LargeBundle
+    productType: 0
+    idGooglePlay: iap.color.block.slide.largebundle
+    idIOS: iap.color.block.slide.largebundle
+    value: 0
+    localizedPriceString: '-'
+    price: 28.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: FailOffers
+    productType: 0
+    idGooglePlay: iap.color.block.slide.failoffer
+    idIOS: iap.color.block.slide.failoffer
+    value: 0
+    localizedPriceString: '-'
+    price: 4.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: CoinPack4
+    productType: 0
+    idGooglePlay: iap.color.block.slide.coinpack4
+    idIOS: iap.color.block.slide.coinpack4
+    value: 0
+    localizedPriceString: '-'
+    price: 27.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: CoinPack5
+    productType: 0
+    idGooglePlay: iap.color.block.slide.coinpack5
+    idIOS: iap.color.block.slide.coinpack5
+    value: 0
+    localizedPriceString: '-'
+    price: 49.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: CoinPack6
+    productType: 0
+    idGooglePlay: iap.color.block.slide.coinpack6
+    idIOS: iap.color.block.slide.coinpack6
+    value: 0
+    localizedPriceString: '-'
+    price: 95.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: StartBundle
+    productType: 0
+    idGooglePlay: iap.color.block.slide.startbundle
+    idIOS: iap.color.block.slide.startbundle
+    value: 0
+    localizedPriceString: '-'
+    price: 4.49
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: FailOffer2
+    productType: 0
+    idGooglePlay: iap.color.block.slide.failoffer2
+    idIOS: iap.color.block.slide.failoffer2
+    value: 0
+    localizedPriceString: '-'
+    price: 7.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: PiggyBank
+    productType: 0
+    idGooglePlay: iap.color.block.slide.piggybank
+    idIOS: iap.color.block.slide.piggybank
+    value: 0
+    localizedPriceString: '-'
+    price: 4.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: LiveOffer
+    productType: 0
+    idGooglePlay: iap.color.block.slide.liveoffer
+    idIOS: iap.color.block.slide.liveoffer
+    value: 0
+    localizedPriceString: '-'
+    price: 2.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: SS1Pass
+    productType: 1
+    idGooglePlay: iap.color.block.slide.ss1pass
+    idIOS: iap.color.block.slide.ss1pass
+    value: 0
+    localizedPriceString: '-'
+    price: 9.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: SkipTicket_Pk1_Sale
+    productType: 0
+    idGooglePlay: iap.color.block.slide.skipticket_pk1_saleoff
+    idIOS: iap.color.block.slide.skipticket_pk1_saleoff
+    value: 0
+    localizedPriceString: '-'
+    price: 1.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: Achievement100
+    productType: 0
+    idGooglePlay: iap.color.block.slide.achievement100
+    idIOS: iap.color.block.slide.achievement100
+    value: 0
+    localizedPriceString: '-'
+    price: 1.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: Achievement200
+    productType: 0
+    idGooglePlay: iap.color.block.slide.achievement200
+    idIOS: iap.color.block.slide.achievement200
+    value: 0
+    localizedPriceString: '-'
+    price: 1.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: Achievement500
+    productType: 0
+    idGooglePlay: iap.color.block.slide.achievement500
+    idIOS: iap.color.block.slide.achievement500
+    value: 0
+    localizedPriceString: '-'
+    price: 1.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:
+  - productName: Achievement600
+    productType: 0
+    idGooglePlay: iap.color.block.slide.achievement600
+    idIOS: iap.color.block.slide.achievement600
+    value: 0
+    localizedPriceString: '-'
+    price: 4.99
+    isoCurrencyCode:
+    orderID:
+    purchaseToken:
+    transactionID:
+    receipt:

@@ -1,0 +1,303 @@
+[
+	{
+		"id": 0,
+		"name": "CoinPack1",
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 1000
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "CoinPack2",
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 5000
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "CoinPack3",
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 12000
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "CoinPack4",
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 25000
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "CoinPack5",
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 60000
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "CoinPack6",
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 150000
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "SkipTicket_Pk1",
+		"reward": [
+			{
+				"itemId": 1,
+				"amount": 5
+			}
+		]
+	},
+	{
+		"id": 7,
+		"name": "SkipTicket_Pk2",
+		"reward": [
+			{
+				"itemId": 1,
+				"amount": 10
+			}
+		]
+	},
+	{
+		"id": 8,
+		"name": "SkipTicket_Pk3",
+		"reward": [
+			{
+				"itemId": 1,
+				"amount": 30
+			}
+		]
+	},
+	{
+		"id": 9,
+		"name": "NoAdsBundle",
+		"isActiveOnShop": true,
+		"reward": [
+			{
+				"itemId": 99,
+				"amount": 0
+			},
+			{
+				"itemId": 0,
+				"amount": 2400
+			},
+			{
+				"itemId": 2,
+				"amount": 5
+			},
+			{
+				"itemId": 3,
+				"amount": 5
+			},
+			{
+				"itemId": 4,
+				"amount": 5
+			}
+		]
+	},
+	{
+		"id": 10,
+		"name": "SmallBundle",
+		"isActiveOnShop": true,
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 6000
+			},
+			{
+				"itemId": 5,
+				"amount": 3600
+			}
+		]
+	},
+	{
+		"id": 11,
+		"name": "MediumBundle",
+		"isActiveOnShop": true,
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 10000
+			},
+			{
+				"itemId": 2,
+				"amount": 5
+			},
+			{
+				"itemId": 3,
+				"amount": 5
+			},
+			{
+				"itemId": 4,
+				"amount": 5
+			},
+			{
+				"itemId": 5,
+				"amount": 10800
+			}
+		]
+	},
+	{
+		"id": 12,
+		"name": "LargeBundle",
+		"isActiveOnShop": true,
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 16000
+			},
+			{
+				"itemId": 2,
+				"amount": 10
+			},
+			{
+				"itemId": 3,
+				"amount": 10
+			},
+			{
+				"itemId": 4,
+				"amount": 10
+			},
+			{
+				"itemId": 5,
+				"amount": 21600
+			}
+		]
+	},
+	{
+		"id": 13,
+		"name": "FailOffers",
+		"isActiveOnShop": false,
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 2400
+			},
+			{
+				"itemId": 2,
+				"amount": 1
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			},
+			{
+				"itemId": 4,
+				"amount": 1
+			},
+			{
+				"itemId": 5,
+				"amount": 1800
+			}
+		]
+	},
+	{
+		"id": 14,
+		"name": "StartBundle",
+		"isActiveOnShop": false,
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 2400
+			},
+			{
+				"itemId": 2,
+				"amount": 1
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			},
+			{
+				"itemId": 4,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 15,
+		"name": "NoAds",
+		"isActiveOnShop": true,
+		"reward": [
+			{
+				"itemId": 99,
+				"amount": 0
+			}
+		]
+	},
+	{
+		"id": 16,
+		"name": "FailOffer2",
+		"isActiveOnShop": false,
+		"reward": [
+			{
+				"itemId": 0,
+				"amount": 4300
+			},
+			{
+				"itemId": 2,
+				"amount": 2
+			},
+			{
+				"itemId": 3,
+				"amount": 2
+			},
+			{
+				"itemId": 4,
+				"amount": 2
+			},
+			{
+				"itemId": 5,
+				"amount": 5400
+			}
+		]
+	},
+	{
+		"id": 17,
+		"name": "LiveOffer",
+		"isActiveOnShop": false,
+		"reward": [
+			{
+				"itemId": 5,
+				"amount": 3600
+			}
+		]
+	},
+	{
+		"id": 18,
+		"name": "SS1Pass",
+		"isActiveOnShop": false,
+		"reward": []
+	},
+	{
+		"id": 19,
+		"name": "SkipTicket_Pk1_Sale",
+		"reward": [
+			{
+				"itemId": 1,
+				"amount": 5
+			}
+		]
+	}
+]

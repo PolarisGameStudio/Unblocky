@@ -1,0 +1,144 @@
+[
+	{
+		"id": 1,
+		"score": 30,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 300
+			}
+		],
+		"rewardsPremium": []
+	},
+	{
+		"id": 2,
+		"score": 50,
+		"rewardsFree": [
+			{
+				"itemId": 1,
+				"amount": 1
+			}
+		],
+		"rewardsPremium": []
+	},
+	{
+		"id": 3,
+		"score": 100,
+		"enumPack": "Achievement100",
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 300
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 2,
+				"amount": 2
+			},
+			{
+				"itemId": 0,
+				"amount": 500
+			}
+		]
+	},
+	{
+		"id": 4,
+		"score": 150,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 500
+			}
+		],
+		"rewardsPremium": [
+		]
+	},
+	{
+		"id": 5,
+		"score": 200,
+		"enumPack": "Achievement200",
+		"rewardsFree": [
+					{
+				"itemId": 2,
+				"amount": 3
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 0,
+				"amount": 500
+			},
+			{
+				"itemId": 3,
+				"amount": 2
+			}
+		]
+	},
+	{
+		"id": 6,
+		"score": 300,
+		"rewardsFree": [
+			{
+				"itemId": 0,
+				"amount": 800
+			}
+		],
+		"rewardsPremium": []
+	},
+	{
+		"id": 7,
+		"score": 400,
+		"rewardsFree": [
+			{
+				"itemId": 5,
+				"amount": 900
+			}
+		],
+		"rewardsPremium": []
+	},
+	{
+		"id": 8,
+		"score": 500,
+		"enumPack": "Achievement500",
+		"rewardsFree": [
+			{
+				"itemId": 1,
+				"amount": 2
+			}
+		],
+		"rewardsPremium": 
+		[
+			{
+				"itemId": 0,
+				"amount": 1000
+			},
+			{
+				"itemId": 3,
+				"amount": 1
+			}
+		]
+	},
+	{
+		"id": 9,
+		"score": 600,
+		"enumPack": "Achievement600",
+		"rewardsFree": 
+		[
+			{
+				"itemId": 3,
+				"amount": 3
+			}
+		],
+		"rewardsPremium": [
+			{
+				"itemId": 4,
+				"amount": 3
+			},
+			{
+				"itemId": 3,
+				"amount": 3
+			}
+		]
+	}
+]

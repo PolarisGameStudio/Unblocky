@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f115479c5a0fd32cc54580f245d2e0, type: 3}
+  m_Name: FalconPopupForceUpdateLanguage
+  m_EditorClassIdentifier:
+  localizeInfos:
+  - Language: English
+    Cancel: Cancel
+    Update: Update
+    Title: You are using old version, please update!
+  - Language: Vietnamese
+    Cancel: Hủy
+    Update: Cập nhật
+    Title: Bạn đang dùng phiên bản cũ, hãy cập nhật!
+  - Language: Arabic
+    Cancel: إلغاء
+    Update: تحديث
+    Title: أنت تستخدم الإصدار القديم، يرجى التحديث!
+  - Language: ChineseTraditional
+    Cancel: 取消
+    Update: 更新
+    Title: 您正在使用旧版本，请更新！
+  - Language: French
+    Cancel: Annuler
+    Update: Mettre à jour
+    Title: Vous utilisez une ancienne version, veuillez mettre à jour !
+  - Language: German
+    Cancel: Abbrechen
+    Update: Aktualisieren
+    Title: Sie verwenden eine alte Version, bitte aktualisieren Sie!
+  - Language: Indonesian
+    Cancel: Batal
+    Update: Perbarui
+    Title: Anda menggunakan versi lama, harap perbarui!
+  - Language: Japanese
+    Cancel: キャンセル
+    Update: 更新する
+    Title: 古いバージョンを使用していますので、アップデートしてください！
+  - Language: Korean
+    Cancel: 취소
+    Update: 업데이트
+    Title: 오래된 버전을 사용 중입니다. 업데이트해주세요!
+  - Language: Portuguese
+    Cancel: Cancelar
+    Update: Atualizar
+    Title: Você está usando uma versão antiga, por favor atualize!
+  - Language: Spanish
+    Cancel: Cancelar
+    Update: Actualizar
+    Title: Estás usando una versión antigua, ¡por favor actualiza!

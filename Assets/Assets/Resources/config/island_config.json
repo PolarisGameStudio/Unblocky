@@ -1,0 +1,254 @@
+[
+	{
+		"id": 0,
+		"name": "Fruit Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Green Apple House",
+				"type": 0,
+				"value": 10
+			},
+			{
+				"buildingName": "Blueberry Character",
+				"type": 1,
+				"value": 10,
+				"avatarId": "21"
+			},
+			{
+				"buildingName": "Eggplant House",
+				"type": 0,
+				"value": 10
+			},
+			{
+				"buildingName": "Strawberry House",
+				"type": 0,
+				"value": 10,
+				"avatarId": "22"
+			},
+			{
+				"buildingName": "Pear Character",
+				"type": 1,
+				"value": 10,
+				"avatarId": "22"
+			}
+		]
+	},
+	{
+		"id": 1,
+		"name": "Toy Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Seesaw",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Cute Girl Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "23"
+			},
+			{
+				"buildingName": "Toy Boxes",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Air Balloon",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Playground Train",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Cowgirl Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "24"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Candy Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Jam Table",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Chocolate Boy Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "25"
+			},
+			{
+				"buildingName": "Sponge Cake Lamp",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Lollipop Tree",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Gingerbread Cake House",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Pudding Girl Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "26"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"name": "Animal Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Bushes",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Good Boy Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "27"
+			},
+			{
+				"buildingName": "Elephant",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Giraffe",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Lion",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Glasses Girl Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "28"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Pharaoh Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Pyramid",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Pharaoh Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "29"
+			},
+			{
+				"buildingName": "Sphinx statue",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Mini Pyramid",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Mummy Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "30"
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Pirate Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Pirate House",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Pirate Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "31"
+			},
+			{
+				"buildingName": "LightHouse",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Boat",
+				"type": 0,
+				"value": 20
+			},
+					{
+				"buildingName": "Pirate Captain Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "32"
+			}
+		]
+	},
+	{
+		"id": 6,
+		"name": "Halloween Island",
+		"buildingInfo": [
+			{
+				"buildingName": "Hallowen Table",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Vampire Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "33"
+			},
+			{
+				"buildingName": "Halloween Chair",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Halloween Bookcase",
+				"type": 0,
+				"value": 20
+			},
+			{
+				"buildingName": "Ghost Character",
+				"type": 1,
+				"value": 20,
+				"avatarId": "34"
+			},
+			{
+				"buildingName": "Halloween Heater",
+				"type": 0,
+				"value": 20
+			}
+		]
+	}
+]
