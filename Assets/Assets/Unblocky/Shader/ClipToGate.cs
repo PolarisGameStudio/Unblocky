@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[ExecuteInEditMode]
 public class ClipToGate : MonoBehaviour
 {
     [Header("Gate Settings")]
@@ -21,27 +20,12 @@ public class ClipToGate : MonoBehaviour
         mpb = new MaterialPropertyBlock();
     }
 
-    void LateUpdate()
+    public void SetMatClipping(Vector3 vWorldpos, Vector3 vWorldNormal)
     {
-        if (meshRenderer == null) meshRenderer = GetComponent<Renderer>();
-        if (gateTransform == null || meshRenderer == null) return;
-
-        // Khắc phục lỗi Null khi chạy trong Editor
-        if (mpb == null)
-        {
-            mpb = new MaterialPropertyBlock();
-        }
-
-        // Lấy vị trí thế giới của Gate
-        Vector3 gatePos = gateTransform.position;
-
-        // Hướng Vector pháp tuyến mặt cắt (tự động xoay theo Gate)
-        Vector3 worldNormal = gateTransform.TransformDirection(keepDirection).normalized;
-
-        // Truyền tham số vào Shader qua MaterialPropertyBlock
         meshRenderer.GetPropertyBlock(mpb);
-        mpb.SetVector(ClipPositionID, gatePos);
-        mpb.SetVector(ClipNormalID, worldNormal);
+        mpb.SetVector(ClipPositionID, vWorldpos);
+        mpb.SetVector(ClipNormalID, vWorldNormal);
         meshRenderer.SetPropertyBlock(mpb);
     }
+
 }

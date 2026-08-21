@@ -86,8 +86,8 @@ GameObject:
   - component: {fileID: 6103581810901405245}
   - component: {fileID: 7866604914989806972}
   - component: {fileID: 5491967858541129142}
-  - component: {fileID: 6735048780561811753}
   - component: {fileID: 7605888674422424233}
+  - component: {fileID: 1692517567927301274}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -153,20 +153,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6735048780561811753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2868035869232881892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2481840b32cb340a64a76d7500dac2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _canvasGroup: {fileID: 0}
-  _fadeDuration: 1
 --- !u!225 &7605888674422424233
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -179,6 +165,20 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1692517567927301274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868035869232881892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ff81ed05a96a94eb9c924e6b43c1c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasGroup: {fileID: 7605888674422424233}
+  _fadeDuration: 1
 --- !u!1 &3063854206771392564
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6900541087988280340}
   - component: {fileID: 5661909426534577116}
-  - component: {fileID: 6172820381093945859}
+  - component: {fileID: 4280570707474453668}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6172820381093945859
+--- !u!114 &4280570707474453668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4617239958112988077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cf77df814fd9f45ac2e5d3dc5922ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 4483d25e3c20d804990cc93cb4321fc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _loadingSlider: {fileID: 5661909426534577116}
@@ -652,7 +652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7825204961878579681}
-  - component: {fileID: 7703786676913396713}
+  - component: {fileID: 6908200584606499164}
   m_Layer: 5
   m_Name: FadeTransition
   m_TagString: Untagged
@@ -680,7 +680,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7703786676913396713
+--- !u!114 &6908200584606499164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -689,9 +689,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7164891525747856723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a774e92a4b93a03478c4778e81346e2c, type: 3}
+  m_Script: {fileID: 11500000, guid: b5798f047c8f9204ba15f6659f58ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _transitions:
-  - {fileID: 6735048780561811753}
-  - {fileID: 6172820381093945859}
+  - {fileID: 1692517567927301274}
+  - {fileID: 4280570707474453668}

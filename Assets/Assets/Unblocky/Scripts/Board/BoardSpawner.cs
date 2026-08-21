@@ -20,7 +20,6 @@ public class BoardSpawner : BaseMono
         SpawnVisualGrid(boardSystem._width, boardSystem._height);
     }
 
-    // Copy ĐÚNG HÀM SPAWN GRID vào đây
     private void SpawnVisualGrid(int width, int height)
     {
         if (_cellGridPrefab == null || _gridParent == null) return;
@@ -46,6 +45,19 @@ public class BoardSpawner : BaseMono
                 ground.name = $"Ground_{x}_{y}";
             }
         }
+        // Lấy BoxCollider ra, nếu chưa có thì Add thêm vào (để tránh bị add nhiều lần nếu spawn lại)
+        BoxCollider boardCollider = _gridParent.GetComponent<BoxCollider>();
+        if (boardCollider == null)
+        {
+            boardCollider = _gridParent.gameObject.AddComponent<BoxCollider>();
+        }
+        // Kích thước mâm bằng đúng width và height
+        boardCollider.size = new Vector3(width, 1f, height);
+
+        // Vị trí tâm (Công thức: lấy ô cuối cùng trừ đi ô đầu tiên rồi chia đôi)
+        // Lưu ý: Y = 0 để cho nó trùng với mặt phẳng yGround
+        boardCollider.center = new Vector3((width - 1) / 2f, 0f, (height - 1) / 2f);
+
     }
 
 

@@ -3,6 +3,13 @@ using UnityEngine;
 
 public class PlacementController : MonoBehaviour
 {
+    public static PlacementController Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     public bool PlaceInstant(PlaceableObject placeable, Vector2Int grid)
     {
         if (placeable == null)
