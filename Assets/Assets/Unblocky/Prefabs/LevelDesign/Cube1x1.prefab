@@ -289,6 +289,8 @@ GameObject:
   - component: {fileID: 5715053281184125302}
   - component: {fileID: 3522688288878045726}
   - component: {fileID: 3920058876986494042}
+  - component: {fileID: 1867108907426831897}
+  - component: {fileID: 4704494441128216036}
   m_Layer: 6
   m_Name: Cube1x1
   m_TagString: Untagged
@@ -341,12 +343,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 0
-  followSpeed: 12
+  followSpeed: 20
   maxVelocity: 20
   snapBeforeDropDistance: 0.05
+  _groundMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!54 &3522688288878045726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -386,9 +388,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Outline
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineWidth: 5
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1867108907426831897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5926561695969023819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851ce390cd3c5734ab994ff9be6e95bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _draggable: {fileID: 0}
+--- !u!114 &4704494441128216036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5926561695969023819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c495248012a3f44982f23ef36163434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tickMode: 0

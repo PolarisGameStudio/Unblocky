@@ -1,14 +1,14 @@
-using Flavor;
+﻿using Flavor;
 using System;
 using UnityEngine;
 
-public sealed class DraggableObject : MonoBehaviour
+public class DraggableObject : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private LayerMask groundMask;
-    [SerializeField] private float followSpeed = 12f;
+    [SerializeField] private float followSpeed = 15f;
     [SerializeField] private float maxVelocity = 20f;
     [SerializeField] private float snapBeforeDropDistance = 0.05f;
+    [SerializeField] private LayerMask _groundMask;
 
     private bool isDragging;
     private bool isMovingToDropPoint;
@@ -16,7 +16,8 @@ public sealed class DraggableObject : MonoBehaviour
     private Vector3 dropTargetPosition;
 
     public event Action DroppedOnGround;
-    public bool IsDragging => isDragging;
+    public event Action OnDragStarted;
+    public event Action OnDragEnded;
 
     private void Awake()
     {
@@ -49,6 +50,7 @@ public sealed class DraggableObject : MonoBehaviour
         rb.isKinematic = false;
         rb.useGravity = false;
         rb.constraints = RigidbodyConstraints.FreezeRotation;
+        OnDragStarted?.Invoke();
 
         ClearVelocity();
     }
@@ -76,6 +78,8 @@ public sealed class DraggableObject : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation;
 
         ClearVelocity();
+
+        OnDragEnded?.Invoke();
     }
 
     private void BeginPhysicalDrop()
@@ -114,24 +118,13 @@ public sealed class DraggableObject : MonoBehaviour
         if (rb == null || rb.isKinematic)
             return;
 
-        Vector3 current = rb.position;
-
-        Vector3 currentXZ = new Vector3(current.x, 0f, current.z);
-        Vector3 targetXZ = new Vector3(targetPosition.x, 0f, targetPosition.z);
-
-        Vector3 directionXZ = targetXZ - currentXZ;
-        Vector3 velocity = directionXZ * followSpeed;
-
+        Vector3 direction = targetPosition - rb.position;
+        Vector3 velocity = direction * followSpeed;
         if (velocity.magnitude > maxVelocity)
             velocity = velocity.normalized * maxVelocity;
 
-        rb.linearVelocity = new Vector3(velocity.x, 0f, velocity.z);
+        rb.linearVelocity = velocity;
 
-        Vector3 fixedPosition = rb.position;
-        fixedPosition.y = targetPosition.y;
-
-        rb.position = fixedPosition;
-        transform.position = fixedPosition;
     }
 
     private void MoveToDropPointByVelocity()
@@ -173,7 +166,7 @@ public sealed class DraggableObject : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!collision.gameObject.IsInLayerMask(groundMask)) return;
+        if (!collision.gameObject.IsInLayerMask(_groundMask)) return;
 
         if (isDragging)
             return;

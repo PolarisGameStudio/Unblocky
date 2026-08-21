@@ -146,9 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3200008047031988500}
-  - component: {fileID: 917907829673237451}
   - component: {fileID: 2669093406011924715}
-  - component: {fileID: 6158366758845892566}
   m_Layer: 5
   m_Name: Gate
   m_TagString: Untagged
@@ -172,22 +170,6 @@ Transform:
   - {fileID: 8040370215834615256}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &917907829673237451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4296393940073360988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f329108b3f144e4b806e2cb7331a625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaceableObject
-  occupiedOffsets:
-  - {x: 0, y: 0}
-  - {x: 0, y: 1}
-  currentGrid: {x: 0, y: 0}
 --- !u!54 &2669093406011924715
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -215,24 +197,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &6158366758845892566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4296393940073360988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Outline
-  outlineMode: 0
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 5
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &6163253003712467459
 GameObject:
   m_ObjectHideFlags: 0

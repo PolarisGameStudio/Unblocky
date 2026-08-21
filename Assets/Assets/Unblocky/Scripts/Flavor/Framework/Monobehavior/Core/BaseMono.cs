@@ -20,6 +20,8 @@ namespace Flavor
             this.GetApplication().UnregisterTickable(this);
         }
 
+        protected virtual void Awake() { }
+
         protected virtual void Start()
         {
             Initialize();

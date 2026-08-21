@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06c9c95ade9704947babc7200eaf6d5f, type: 3}
-  m_Name: Test
+  m_Name: SceneTransitionSO
   m_EditorClassIdentifier: 
-  _defaultTransitions: []
+  _defaultTransitions:
+  - {fileID: 6908200584606499164, guid: fa5fa9f3c470dc1409567e214ade80a1, type: 3}
   _rules:
   - FromScene: 1
     ToScene: 4
     TransitionPrefab:
-    - {fileID: 7703786676913396713, guid: fa5fa9f3c470dc1409567e214ade80a1, type: 3}
+    - {fileID: 6908200584606499164, guid: fa5fa9f3c470dc1409567e214ade80a1, type: 3}

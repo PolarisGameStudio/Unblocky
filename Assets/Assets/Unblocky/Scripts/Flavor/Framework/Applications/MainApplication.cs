@@ -136,6 +136,7 @@ namespace Flavor
             }
 
             Debug.Log("[MainApplication] HOÀN TẤT: Toàn bộ hệ thống đã lên mâm!");
+            this.LogWarning("HOÀN TẤT: Toàn bộ hệ thống đã lên mâm!");
         }
     }
 

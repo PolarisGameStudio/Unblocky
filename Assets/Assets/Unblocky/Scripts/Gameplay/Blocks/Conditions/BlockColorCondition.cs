@@ -1,16 +1,14 @@
+using Flavor;
 using UnityEngine;
-
-public class BlockColorCondition : MonoBehaviour
+namespace Flavor
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public class BlockColorCondition : BaseMono, IBlockFitCondition
     {
-        
+        private BlockBehavior _blockBehavior;
+        public bool IsMatch(IGateInfo gateInfo)
+        {
+            return _blockBehavior.Color == gateInfo.Color;
+        }
     }
 }

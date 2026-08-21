@@ -4,24 +4,18 @@ namespace Flavor
 {
     public class GameSystem : BaseSystem
     {
-        public static GameSystem Instance { get; private set; }
+        public GameColorConfig currentColorConfig;
+
         private void Awake()
         {
-            var a = GetComponent<MainApplication>();
-            if (Instance != null && Instance != this)
-            {
-                Destroy(this.gameObject);
-            }
-            else
-            {
-                Instance = this;
-                DontDestroyOnLoad(this.gameObject);
-            }
+          
         }
 
         public override void Initialize()
         {
             base.Initialize();
+
+            ServiceLocator.Register(currentColorConfig.GetType(), currentColorConfig);
 
             IsInitialized = true;
         }

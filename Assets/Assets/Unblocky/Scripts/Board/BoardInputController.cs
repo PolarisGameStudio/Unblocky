@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using Flavor;
+using UnityEngine;
 
 public class BoardInputController : MonoBehaviour
 {
+    public static BoardInputController Instance { get; private set; }
+
     [Header("Reference Variables")]
     [SerializeField] private PlacementController _placementController;
 
@@ -12,7 +15,7 @@ public class BoardInputController : MonoBehaviour
     [Header("Drag")]
     [SerializeField] private float _liftHeight = 1.5f;
 
-    private PlaceableObject _currentPlaceable;
+    [SerializeField] private PlaceableObject _currentPlaceable;
     private DraggableObject _currentDraggable;
 
     private Vector2Int _previousGrid;
@@ -20,6 +23,8 @@ public class BoardInputController : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
+
         if (_camera == null)
             _camera = Camera.main;
     }
@@ -79,10 +84,17 @@ public class BoardInputController : MonoBehaviour
 
         _previousGrid = placeable.CurrentGrid;
 
-        _grabWorldOffset = CalculateGrabWorldOffset(
-            placeable.transform.position,
-            hit.point
-        );
+        if (TryGetMouseWorldOnDragPlane(out Vector3 planeHitPoint))
+        {
+            _grabWorldOffset = CalculateGrabWorldOffset(
+                placeable.transform.position,
+                planeHitPoint // Dùng tọa độ của Plane Toán Học thay vì hit.point vật lý
+            );
+        }
+        else
+        {
+            _grabWorldOffset = Vector3.zero;
+        }
 
         BoardSystem.instance.UnregisterGrid(placeable);
 
@@ -149,7 +161,7 @@ public class BoardInputController : MonoBehaviour
         }
     }
 
-    private void ClearSelection()
+    public void ClearSelection()
     {
         _currentPlaceable = null;
         _currentDraggable = null;
@@ -186,7 +198,7 @@ public class BoardInputController : MonoBehaviour
 
         Plane dragPlane = new Plane(
             Vector3.up,
-            new Vector3(0f, _liftHeight, 0f)
+            new Vector3(0, _liftHeight, 0)
         );
 
 
@@ -196,4 +208,15 @@ public class BoardInputController : MonoBehaviour
         worldPosition = ray.GetPoint(distance);
         return true;
     }
+
+    private void OnDrawGizmos()
+    {
+        Debug.DrawRay(
+            _camera.ScreenPointToRay(Input.mousePosition).origin,
+            _camera.ScreenPointToRay(Input.mousePosition).direction * 100f,
+            Color.red
+        );
+    }
+
+
 }
