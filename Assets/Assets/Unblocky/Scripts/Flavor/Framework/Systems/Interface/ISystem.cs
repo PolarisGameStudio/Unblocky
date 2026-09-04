@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Flavor
 {
-    public interface ISystem : ILifeCycle
+    public interface ISystem
     {
         UniTask LoadDataAsync();
     }

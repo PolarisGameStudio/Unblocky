@@ -20,6 +20,11 @@ namespace Flavor
             this.GetApplication().UnregisterTickable(this);
         }
 
+        protected virtual void OnDestroy()
+        {
+            Dispose();
+        }
+
         protected virtual void Awake() { }
 
         protected virtual void Start()
@@ -28,7 +33,7 @@ namespace Flavor
         }
 
         public virtual void DoEnable() { }
-        public virtual void DoDisable() { Dispose(); }
+        public virtual void DoDisable() { }
         public virtual void Initialize() { }
         public virtual void Dispose() { }
         public virtual void ListeningEvents() { }

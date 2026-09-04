@@ -1,32 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+
 namespace Flavor
 {
     public class GatePassHandler : BaseMono
     {
+        public event Action OnOpenGate;
+        public event Action OnCloseGate;
 
-        private GateExitHandler _exitHandler;
-        private GateAnim _gateAnim;
+        private HashSet<IBlockInfo> _passingBlocks = new HashSet<IBlockInfo>();
 
-        public override void ListeningEvents()
+        public void HandleBlockPass(IBlockController BlockController, IGateController GateController)
         {
-            base.ListeningEvents();
-            _exitHandler.OnBlockExitSuccess += HandleBlockPass;
-
-        }
-
-        public override void UnlisteningEvents()
-        {
-            base.UnlisteningEvents();
-            _exitHandler.OnBlockExitSuccess -= HandleBlockPass;
-
-        }
-
-        public void HandleBlockPass(IBlockInfo BlockInfo, IGateInfo GateInfo)
-        {
-            var openHash = 1;
-            _gateAnim.PlayAnim(openHash);
-            if (BlockInfo.GameObject.TryGetComponent<IBlockExitBehavior>(out var blockExit))
+            var blockInfo = BlockController.BlockInfo;
+            _passingBlocks.Add(BlockController.BlockInfo);
+            if (_passingBlocks.Count == 1)
             {
-                blockExit.Execute(GateInfo);
+                OnOpenGate?.Invoke();
+
+            }
+
+            BlockController.OnExitedGate(GateController.GateInfo, () =>
+            {
+                OnBlockFinishedPassing(blockInfo);
+
+            });
+        }
+
+        private void OnBlockFinishedPassing(IBlockInfo blockInfo)
+        {
+            _passingBlocks.Remove(blockInfo);
+
+            if (_passingBlocks.Count == 0)
+            {
+                OnCloseGate?.Invoke();
             }
         }
     }

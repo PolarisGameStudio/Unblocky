@@ -78,6 +78,8 @@ namespace Flavor
                 yield return null;
             }
 
+            // 5. CHO PHÉP Scene mới kích hoạt
+            op.allowSceneActivation = true;
 
             // 3. Chờ thêm điều kiện khởi tạo dữ liệu riêng của bạn (nếu có)
             if (waitUntil != null)
@@ -95,8 +97,6 @@ namespace Flavor
             // 4. Chốt 100% cho Slider
             onProgress?.Invoke(1.0f);
 
-            // 5. CHO PHÉP Scene mới kích hoạt
-            op.allowSceneActivation = true;
 
             // Chờ Scene hoàn tất kích hoạt hoàn toàn
             while (!op.isDone)

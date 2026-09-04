@@ -1,55 +1,82 @@
-using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
+using Flavor;
 using Sirenix.OdinInspector;
-using Sirenix.Serialization;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelSpawner : SerializedMonoBehaviour
+public class LevelSpawner : BaseMono
 {
     [Header("References")]
     [SerializeField] private PlacementController _placementController;
+    [SerializeField] private BoardSpawner _boardSpawner;
+    private LevelSystem _levelSystem;
 
-    [Header("Test Level Data")]
-    [OdinSerialize]
-    [DictionaryDrawerSettings(
-        KeyLabel = "Cell",
-        ValueLabel = "Prefab")]
-    private Dictionary<Vector2Int, GameObject> levelObjects = new();
 
     private readonly List<PlaceableObject> _spawnedObjects = new();
 
-    private void Start()
+    public void SetData(LevelSystem levelSystem)
     {
-        SpawnLevel();
+        _levelSystem = levelSystem;
     }
 
     [Button]
-    public void SpawnLevel()
+    public async UniTask SpawnLevel()
     {
-
+        var test = _levelSystem.GetLevelConfig;
         ClearLevel();
-        //board.SpawnGrid(board.Width, board.Height);
+        _boardSpawner.SpawnVisualGrid(test.BoardSize.x, test.BoardSize.y);
 
-        foreach (var pair in levelObjects)
+        foreach (var wallConfig in test.Walls)
         {
-            Vector2Int grid = pair.Key;
-            GameObject prefab = pair.Value;
+            if (wallConfig == null) continue;
 
-            if (prefab == null)
-                continue;
+            var wallPosSpawn = wallConfig.vPosSpawn;
+            var wallName = wallConfig.Name;
+            GameObject spawnedObj = await AddressablesExtensions.InstantiateAsync(wallName);
 
-            SpawnObjectAt(grid, prefab);
+            spawnedObj.transform.position = new Vector3(wallPosSpawn.x, 0, wallPosSpawn.y);
+        }
+
+        foreach (var gateConfig in test.Gates)
+        {
+            this.Log($"[GatesCount] 1");
+            if (gateConfig == null) continue;
+
+            var gatePosSpawn = gateConfig.vPosSpawn;
+            var gateName = gateConfig.Name;
+            GameObject spawnedObj = await AddressablesExtensions.InstantiateAsync(gateName);
+
+            if (spawnedObj.TryGetComponent<IGateController>(out var gateController))
+            {
+                await gateController.SetupData(gateConfig);
+            }
+
+            spawnedObj.transform.position = new Vector3(gatePosSpawn.x, 0, gatePosSpawn.y);
+        }
+
+        foreach (var blockConfig in test.Blocks)
+        {
+            if (blockConfig == null) continue;
+
+            var blockGridSpawn = blockConfig.GridSpawn;
+            var blockName = blockConfig.Name;
+            GameObject spawnedObj = await AddressablesExtensions.InstantiateAsync(blockName);
+            if (spawnedObj.TryGetComponent<IBlockController>(out var blockController))
+            {
+                await blockController.SetupData(blockConfig);
+            }
+
+            SpawnObjectAt(blockGridSpawn, spawnedObj);
         }
     }
 
-    private void SpawnObjectAt(Vector2Int grid, GameObject prefab)
+    private void SpawnObjectAt(Vector2Int grid, GameObject obj)
     {
-        GameObject obj = Instantiate(prefab);
-
         PlaceableObject placeable = obj.GetComponent<PlaceableObject>();
 
         if (placeable == null)
         {
-            Debug.LogWarning($"{prefab.name} has no PlaceableObject.");
+            Debug.LogWarning($"{obj.name} has no PlaceableObject.");
             Destroy(obj);
             return;
         }

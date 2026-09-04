@@ -2,14 +2,18 @@
 {
     public class GateFitCondition : BaseMono, IGateFitCondition
     {
-        private GateBehavior _gateBehavior;
+        private int _maxX;
+        private int _maxY;
+        private DirectionType _direction;
 
         public bool IsMatch(IBlockInfo blockInfo)
         {
+
             var (maxX, maxY) = VectorUtils.GetMax(blockInfo.OccupiedOffsets);
 
-            var gateMaxX = _gateBehavior.MaxX;
-            var gateMaxY = _gateBehavior.MaxY;
+            var gateMaxX = _maxX;
+            var gateMaxY = _maxY;
+            //this.Log($"MaxX {maxX} MaxY {maxY} - gateMaxX {gateMaxX} gateMaxY {gateMaxY} - {IsInsideGate(gateMaxX, maxX, gateMaxY, maxY)}");
 
             return IsInsideGate(gateMaxX, maxX, gateMaxY, maxY);
 
@@ -17,11 +21,24 @@
 
         public bool IsInsideGate(int GateMaxX, int BlockMaxX, int GateMaxY, int BlockMaxY)
         {
-            bool isFitX = BlockMaxX >= 0 && BlockMaxX <= GateMaxX;
-            bool isFitY = BlockMaxY >= 0 && BlockMaxY <= GateMaxY;
+            if (DirectionType.Horizontal.HasFlag(_direction))
+            {
+                return BlockMaxY >= 0 && BlockMaxY <= GateMaxY;
+            }
 
-            return isFitX && isFitY; // Phải vừa khít X VÀ vừa khít Y
+            // Nếu cổng nằm dọc (Trên, Dưới), quãng đường đi bằng chiều DÀI (Y/Z) của cục gạch
+            if (DirectionType.Vertical.HasFlag(_direction))
+            {
+                return BlockMaxX >= 0 && BlockMaxX <= GateMaxX;
+            }
+            return false;
         }
 
+        public void SetupData(IGateInfo info)
+        {
+            _maxX = info.MaxX;
+            _maxY = info.MaxY;
+            _direction = info.Direction;
+        }
     }
 }

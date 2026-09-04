@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -5,14 +6,15 @@ namespace Flavor
 {
     public class GateDetective : BaseMono
     {
-        private GateBehavior _gateBehavior;
-        private GateExitHandler _gateExitHandler;
+
+        public event Action<IBlockController> OnDetectBlock;
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.transform.TryGetComponent<IBlockInfo>(out var blockInfo))
+            Rigidbody rb = other.attachedRigidbody;
+            if (rb != null && rb.TryGetComponent<IBlockController>(out var blockController))
             {
-                _gateExitHandler.TryToExit(blockInfo, _gateBehavior);
+                OnDetectBlock?.Invoke(blockController);
             }
         }
 

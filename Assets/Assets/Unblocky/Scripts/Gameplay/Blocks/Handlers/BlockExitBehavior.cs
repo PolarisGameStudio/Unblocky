@@ -1,54 +1,70 @@
-using DG.Tweening;
+﻿using DG.Tweening;
+using NUnit.Framework.Internal;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Flavor
 {
     public class BlockExitBehavior : BaseMono, IBlockExitBehavior
     {
-        private PlaceableObject _placeableObject;
-        private DraggableObject _draggableObject;
         private BlockBehavior _blockBehavior;
-        private ClipToGate _clipToGate;
-        private Vector3 v;
+        private List<IBlockStateListener> _listeners;
+        private BlockContext _ctx;
 
         protected override void Awake()
         {
             base.Awake();
-            _clipToGate = GetComponent<ClipToGate>();
+            // Quét Loa phường 1 lần duy nhất
+            _listeners = GetComponents<IBlockStateListener>().ToList();
+            _blockBehavior = GetComponent<BlockBehavior>();
         }
 
-
-        public void Execute(IGateInfo gateInfo)
+        public void Init(BlockContext ctx)
         {
-            Vector2Int vGrid = Vector2Int.zero;
-            if (ServiceLocator.TryGet<BoardSystem>(out var bm))
-            {
-                bm.UnregisterGrid(_placeableObject);
-                vGrid = bm.TranslateWorldToGrid(transform.position);
-            }
+            _ctx = ctx;
+        }
+
+        public void Execute(IGateInfo gateInfo, Action onComplete = null)
+        {
+            if (ServiceLocator.TryGet<BoardSystem>(out var bm) == false) return;
+            _ctx.DraggableObject.OnDragCancel();
+
+            _ctx.PlaceableObject.RequestRemoval();
+
             _blockBehavior.OnMarkExited();
 
-            BoardInputController.Instance.ClearSelection();
-            PlacementController.Instance.PlaceInstant(_placeableObject, vGrid);
+            Vector2Int vGrid = Vector2Int.zero;
+            vGrid = bm.TranslateWorldToGrid(transform.position);
 
-            SetClippingGate(gateInfo);
+            PlacementController.Instance.PlaceInstant(_ctx.PlaceableObject, vGrid);
 
-            var vDirection = GateDirectionExtensions.ToWorldVector(gateInfo.Direction);
+            var blockSize = _ctx.PlaceableObject.GetMaxSize();
 
-            Vector3 target = transform.position + Vector3.right;
-            transform.DOMove(target, 1f);
+            // LÀM TOÁN BẰNG DATA ĐƯỢC CẤP
+            var vDirection = gateInfo.Direction.ToWorldVector();
+            int exitDistance = gateInfo.Direction.GetExitDistance(blockSize); // Dùng Size được cấp
+            int multiplier = exitDistance > 0 ? exitDistance : 1;
+            Vector3 vTarget = transform.position + (vDirection * multiplier);
 
+            Action onAnimationFinished = () =>
+            {
+                onComplete?.Invoke();
+                
+            };
 
+            // HÔ TO VÀO LOA
+            BaseBlockExitData exitData = new BaseBlockExitData
+            {
+                TargetPosition = vTarget,
+                OnComplete = onComplete,
+                GateInfo = gateInfo,
+            };
+            _listeners.ForEach(l => l.OnExitedGate(exitData));
         }
 
-        public void SetClippingGate(IGateInfo gateInfo)
-        {
-            var vWorldPos = gateInfo.GameObject.transform.position;
-            var vWorldNormal = GateDirectionExtensions.ToWorldVector(gateInfo.Direction);
-
-            if (vWorldPos == null || vWorldNormal == null) return;
-
-            _clipToGate.SetMatClipping(vWorldPos, vWorldNormal);
-        }
     }
 }

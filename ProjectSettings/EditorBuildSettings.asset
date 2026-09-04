@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Assets/Unblocky/Scenes/Launcher.unity
     guid: f457e18945f32f54980955fc9d96a6d7
   - enabled: 1
+    path: Assets/Assets/Unblocky/Scenes/MainMenu.unity
+    guid: 760dd1a4e25f4be44b7b9f780a660af2
+  - enabled: 1
     path: Assets/Assets/Unblocky/Scenes/Gameplay.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

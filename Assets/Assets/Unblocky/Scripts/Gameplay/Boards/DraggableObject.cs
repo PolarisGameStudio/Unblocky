@@ -5,7 +5,7 @@ using UnityEngine;
 public class DraggableObject : MonoBehaviour
 {
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float followSpeed = 15f;
+    [SerializeField] private float followSpeed = 20f;
     [SerializeField] private float maxVelocity = 20f;
     [SerializeField] private float snapBeforeDropDistance = 0.05f;
     [SerializeField] private LayerMask _groundMask;
@@ -18,6 +18,9 @@ public class DraggableObject : MonoBehaviour
     public event Action DroppedOnGround;
     public event Action OnDragStarted;
     public event Action OnDragEnded;
+    public event Action OnDragCanceled;
+
+    public bool IsDragging { get { return isDragging; } }
 
     private void Awake()
     {
@@ -175,7 +178,7 @@ public class DraggableObject : MonoBehaviour
         DroppedOnGround?.Invoke();
     }
 
-    private void ClearVelocity()
+    public void ClearVelocity()
     {
         if (rb == null || rb.isKinematic)
             return;
@@ -184,5 +187,23 @@ public class DraggableObject : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
     }
 
+    public void ClearDraggable()
+    {
+        ClearVelocity();
+
+        rb.isKinematic = false;
+        rb.useGravity = true;
+
+        rb.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePosition;
+
+        isDragging = false;
+        isMovingToDropPoint = false;
+    }
+
+    public void OnDragCancel()
+    {
+        OnDragCanceled?.Invoke();
+        ClearDraggable();
+    }
 
 }

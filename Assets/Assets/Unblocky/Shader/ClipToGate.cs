@@ -1,31 +1,40 @@
-﻿using UnityEngine;
+﻿using Flavor;
+using UnityEngine;
 
 public class ClipToGate : MonoBehaviour
 {
-    [Header("Gate Settings")]
-    public Transform gateTransform; // Kéo thả Transform của Gate vào đây
 
-    [Tooltip("Hướng giữ lại (Vector chỉ về phía phần Mesh KHÔNG bị mất)")]
-    public Vector3 keepDirection = Vector3.forward;
-
-    private Renderer meshRenderer;
-    private MaterialPropertyBlock mpb;
+    [SerializeField] private Renderer meshRenderer;
+    [SerializeField] private MaterialPropertyBlock mpb;
 
     private static readonly int ClipPositionID = Shader.PropertyToID("_ClipPosition");
     private static readonly int ClipNormalID = Shader.PropertyToID("_ClipNormal");
 
-    void Start()
+    private void Awake()
     {
-        meshRenderer = GetComponent<Renderer>();
+        meshRenderer = GetComponentInChildren<Renderer>();
         mpb = new MaterialPropertyBlock();
     }
 
     public void SetMatClipping(Vector3 vWorldpos, Vector3 vWorldNormal)
     {
+        this.Log($"vWorldPos {vWorldpos} - vWorldNormal {vWorldNormal}");
         meshRenderer.GetPropertyBlock(mpb);
         mpb.SetVector(ClipPositionID, vWorldpos);
         mpb.SetVector(ClipNormalID, vWorldNormal);
         meshRenderer.SetPropertyBlock(mpb);
+    }
+
+    public void SetClippingGate(IGateInfo gateInfo)
+    {
+        var vWorldPos = gateInfo.vPos;
+        var vWorldNormal = -DirectionExtensions.ToWorldVector(gateInfo.Direction);
+
+        vWorldPos += vWorldNormal * 1f;
+
+        if (vWorldPos == null || vWorldNormal == null) return;
+
+        SetMatClipping(vWorldPos, vWorldNormal);
     }
 
 }

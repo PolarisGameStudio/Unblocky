@@ -4,8 +4,12 @@ namespace Flavor
 {
     public interface IGateInfo
     {
-        GameColor Color { get; }
-        DirectionType Direction { get; }
-        GameObject GameObject { get; }
+        public Vector3 vPos { get; }
+        public GameColor Color { get; }
+        public DirectionType Direction { get; }
+        public int MaxX { get; }
+        public int MaxY { get; }
+
+        public bool IsSatifiedConditions(IBlockInfo blockInfo);
     }
 }

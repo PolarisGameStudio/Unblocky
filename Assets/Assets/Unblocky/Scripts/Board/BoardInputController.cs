@@ -76,11 +76,15 @@ public class BoardInputController : MonoBehaviour
         DraggableObject draggable =
             hit.collider.GetComponentInParent<DraggableObject>();
 
+        
+
         if (draggable == null)
             return;
 
         _currentPlaceable = placeable;
         _currentDraggable = draggable;
+
+        _currentDraggable.OnDragCanceled += ClearSelection;
 
         _previousGrid = placeable.CurrentGrid;
 
@@ -163,6 +167,8 @@ public class BoardInputController : MonoBehaviour
 
     public void ClearSelection()
     {
+        _currentDraggable.OnDragCanceled -= ClearSelection;
+
         _currentPlaceable = null;
         _currentDraggable = null;
         _grabWorldOffset = Vector3.zero;

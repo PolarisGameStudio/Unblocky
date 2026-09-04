@@ -8,9 +8,14 @@ namespace Flavor
 
         public DirectionType Direction => _direction;
 
-	public bool IsMatch(IGateInfo gateInfo)
+        public void Init(BlockFitConditionContext blockFitConditionContext)
         {
-            return Direction == gateInfo.Direction;
+            _direction = blockFitConditionContext.Direction;
+        }
+
+        public bool IsMatch(IGateInfo gateInfo)
+        {
+            return Direction.HasFlag(gateInfo.Direction);
         }
     }
 }

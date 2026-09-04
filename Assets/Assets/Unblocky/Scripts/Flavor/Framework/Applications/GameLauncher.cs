@@ -11,7 +11,7 @@ namespace Flavor
 
         private void Start()
         {
-            _sceneTransitionManager.ChangeScene(SceneNameType.Gameplay,
+            _sceneTransitionManager.ChangeScene(SceneNameType.MainMenu,
                 waitUntil: () => _mainApplication.IsInitialized);
         }
     }
