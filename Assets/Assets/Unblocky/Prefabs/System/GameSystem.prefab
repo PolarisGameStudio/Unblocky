@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6833be4b45f7ac14197429ca9c6749ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tickMode: 0
   _priority: 0
-  currentColorConfig: {fileID: 11400000, guid: daa2860c8d59d3140a537b7b5d8ec11c, type: 2}
+  ColorConfig: {fileID: 11400000, guid: daa2860c8d59d3140a537b7b5d8ec11c, type: 2}
+  _saveID: 

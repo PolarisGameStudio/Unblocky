@@ -4,19 +4,25 @@ using UnityEngine;
 namespace Flavor
 {
 
-    public class GateExitHandler : BaseMono
+    public class GateExitHandler : BaseMono 
     {
-        public event Action<IBlockInfo, IGateInfo> OnBlockExitSuccess;
+        public event Action<IBlockController, IGateController> OnBlockExitSuccess;
 
-        public void TryToExit(IBlockInfo blockInfo, IGateInfo gateInfo)
+        public void TryToExit(IBlockController blockController, IGateController gateController)
         {
-            var gateBehavior = gateInfo.GameObject.GetComponent<GateBehavior>();
-            var blockBehavior = blockInfo.GameObject.GetComponent<BlockBehavior>();
+            var blockInfo = blockController.BlockInfo;
+            bool isHolding = false;
 
-            if (gateBehavior == null || blockBehavior == null) return;
+            var gateInfo = gateController.GateInfo;
 
-            if (!gateBehavior.IsSatifiedConditions(blockInfo)) return;
-            if (!blockBehavior.IsSatifiedConditions(gateInfo)) return;
+            if (gateInfo == null || blockInfo == null) return;
+
+            if (blockInfo is IDragState dragState)
+                isHolding = dragState.IsDragging;
+            if (blockController.BlockInfo.IsExited || !isHolding) return;
+            if (!gateInfo.IsSatifiedConditions(blockInfo)) return;
+            if (!blockInfo.IsSatifiedConditions(gateInfo)) return;
+            OnBlockExitSuccess?.Invoke(blockController, gateController);
 
         }
     }

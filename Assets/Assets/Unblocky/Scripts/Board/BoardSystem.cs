@@ -17,8 +17,10 @@ public sealed class BoardSystem : BaseSystem
 
     [ShowInInspector] private readonly Dictionary<Vector2Int, PlaceableObject> _occupiedGrids = new();
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -33,7 +35,7 @@ public sealed class BoardSystem : BaseSystem
     {
         if (placeable == null)
             return;
-
+        placeable.OnRequestRemoval -= UnregisterGrid;
         List<Vector2Int> cellsToRemove = new();
 
         foreach (var pair in _occupiedGrids)
@@ -54,6 +56,8 @@ public sealed class BoardSystem : BaseSystem
         {
             _occupiedGrids[cell] = placeable;
         }
+
+        placeable.OnRequestRemoval += UnregisterGrid;
     }
 
     public bool CanPlace(PlaceableObject placeable, Vector2Int rootGrid)

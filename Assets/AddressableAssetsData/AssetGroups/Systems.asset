@@ -27,6 +27,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Systems
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c4408687c8dddd4bad609c255c079b0
+    m_Address: SaveSystem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Systems
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac219bfdc6001f740ab7d945f2932a14
+    m_Address: LevelSystem
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Systems
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c99703064310e3c4db14a65158b2090f
     m_Address: GameSystem
     m_ReadOnly: 0

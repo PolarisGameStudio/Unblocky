@@ -5,10 +5,16 @@ namespace Flavor
 
     public class BlockColorCondition : BaseMono, IBlockFitCondition
     {
-        private BlockBehavior _blockBehavior;
+        private GameColor _color;
+
         public bool IsMatch(IGateInfo gateInfo)
         {
-            return _blockBehavior.Color == gateInfo.Color;
+            return _color == gateInfo?.Color;
+        }
+
+        public void Init(BlockFitConditionContext blockFitConditionContext)
+        {
+            _color = blockFitConditionContext.Color;
         }
     }
 }

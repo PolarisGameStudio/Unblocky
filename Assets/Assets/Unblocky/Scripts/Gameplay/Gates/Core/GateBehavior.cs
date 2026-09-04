@@ -1,5 +1,9 @@
+using Cysharp.Threading.Tasks;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
+using static UnityEngine.Rendering.STP;
 
 namespace Flavor
 {
@@ -13,7 +17,30 @@ namespace Flavor
         public int MaxX => Config.MaxX;
         public int MaxY => Config.MaxY;
         public DirectionType Direction => Config.Direction;
-        public GameObject GameObject => this.gameObject;
+        public Vector3 vPos => this.transform.position;
+
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            _conditions = GetComponentsInChildren<IGateFitCondition>().ToList();
+        }
+
+        public UniTask SetupData(GateSetupInfo info)
+        {
+            Config.Color = info.RequiredColor;
+            Config.Direction = info.ExitDirection;
+
+            foreach (var condition in _conditions)
+            {
+                condition.SetupData(this);
+            }
+
+            return UniTask.CompletedTask;
+
+
+        }
 
         public bool IsSatifiedConditions(IBlockInfo blockInfo)
         {

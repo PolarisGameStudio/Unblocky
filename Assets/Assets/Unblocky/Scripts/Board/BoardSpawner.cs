@@ -20,7 +20,7 @@ public class BoardSpawner : BaseMono
         SpawnVisualGrid(boardSystem._width, boardSystem._height);
     }
 
-    private void SpawnVisualGrid(int width, int height)
+    public void SpawnVisualGrid(int width, int height)
     {
         if (_cellGridPrefab == null || _gridParent == null) return;
         var yCell = 0.5f;

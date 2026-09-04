@@ -4,7 +4,10 @@ namespace Flavor
 {
     public interface ISaveable
     {
-        public void Save();
-        public void Load();
+        public string SaveID { get; }
+        Type SaveDataType { get; }
+        public object CaptureSaving();
+        public void RestoreSaving(object data);
+
     }
 }

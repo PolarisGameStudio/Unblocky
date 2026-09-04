@@ -1,8 +1,9 @@
 using System;
-
-[Serializable]
-public class BlockConfig
+namespace Flavor
 {
-    public GameColor Color;
-    public bool IsExited;
+    [Serializable]
+    public class BlockConfig
+    {
+        public GameColor Color;
+    }
 }

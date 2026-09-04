@@ -16,6 +16,10 @@ MonoBehaviour:
   - {fileID: 6908200584606499164, guid: fa5fa9f3c470dc1409567e214ade80a1, type: 3}
   _rules:
   - FromScene: 1
+    ToScene: 2
+    TransitionPrefab:
+    - {fileID: 6908200584606499164, guid: fa5fa9f3c470dc1409567e214ade80a1, type: 3}
+  - FromScene: 2
     ToScene: 4
     TransitionPrefab:
     - {fileID: 6908200584606499164, guid: fa5fa9f3c470dc1409567e214ade80a1, type: 3}
